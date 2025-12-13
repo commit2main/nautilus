@@ -6,6 +6,8 @@ modules:
       cleanup: true
       copr:
         - yalter/niri
+        - avengemedia/dms
     install:
       packages:
-        - niri
+        - niri # niri core package
+        - dms # dank material shell
