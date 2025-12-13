@@ -9,5 +9,13 @@ modules:
         - avengemedia/dms
     install:
       packages:
-        - niri # niri core package
         - dms # dank material shell
+        - niri # niri core package
+      exclude:
+        - alacritty
+        - fuzzel
+        - mako
+        - swaybg
+        - swayidle
+        - swaylock
+        - waybar
