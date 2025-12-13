@@ -1,0 +1,25 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: default-flatpaks
+    configurations:
+      - notify: true
+        scope: system
+        install:
+          - com.brave.Browser
+          - com.github.tchx84.Flatseal
+          - com.ranfdev.DistroShelf
+          - com.seafile.Client
+          - dev.zed.Zed
+          - eu.betterbird.Betterbird
+          - io.github.kolunmi.Bazaar
+          - io.gitlab.librewolf-community
+          - io.podman_desktop.PodmanDesktop
+          - md.obsidian.Obsidian
+          - me.iepure.devtoolbox
+          - org.deskflow.deskflow
+          - org.fedoraproject.MediaWriter
+          - org.libreoffice.LibreOffice
+          - org.localsend.localsend_app
+          - org.qbittorrent.qBittorrent
+          - org.remmina.Remmina

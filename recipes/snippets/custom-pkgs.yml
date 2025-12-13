@@ -1,0 +1,60 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+        - vscode.repo
+      keys:
+        - https://pkgs.tailscale.com/stable/fedora/repo.gpg
+        - https://repos.fyralabs.com/terra41/key.asc
+        - https://packages.microsoft.com/keys/microsoft.asc
+    install:
+      packages:
+        - android-tools # ADB
+        - bcc # eBPF utilities
+        - bpftop # top for eBPF
+        - bpftrace # eBPF trace library
+        - chezmoi # Dotfile manager
+        - code # VScode
+        - davfs2 # WebDAV filesystem driver
+        - edk2-ovmf # Virtualization
+        - fastfetch # CLI system information
+        - fish # Fish shell
+        - gh # GitHub CLI
+        - git-credential-libsecret # Git credential store using libsecret
+        - ifuse # FUSE for Apple devices
+        - igt-gpu-tools # Intel GPU tools
+        - iotop # View IO stats
+        - libimobiledevice # iOS services driver
+        - libvirt # Virtualization
+        - libvirt-nss
+        - lm_sensors # Hardware sensor utility
+        - osbuild-selinux # SELinux policy for osbuild
+        - p7zip # 7zip
+        - p7zip-plugins
+        - podman-compose # Compose for Podman
+        - powertop # Power consumption and management CLI utility
+        - qemu # Virtualisation
+        - qemu-char-spice
+        - qemu-device-display-virtio-gpu
+        - qemu-device-display-virtio-vga
+        - qemu-device-usb-redirect
+        - qemu-img
+        - qemu-system-x86-core
+        - qemu-user-binfmt
+        - qemu-user-static
+        - rclone # Cloud storage CLI utility
+        - restic # Backup program
+        - sysprof # System profiler
+        - tailscale # Mesh VPN
+        - virt-manager # Virtualisation
+        - virt-v2v
+        - virt-viewer
+    remove:
+      packages:
+        - firefox # Replace with Flatpak browsers
+        - firefox-langpacks
