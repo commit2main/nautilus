@@ -2,9 +2,16 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 name: nautilus
 description: Opinionated Fedora Atomic niri image.
+
 base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: 43
 
 modules:
   - type: signing
-  - from-file: snippets/niri-pkgs.yml
+  - from-file: modules/copy-system-files.yml
+  - from-file: modules/custom-os-release.yml
+  - from-file: modules/niri-pkgs.yml
+  - from-file: modules/custom-pkgs.yml
+  - from-file: modules/services.yml
+  - from-file: modules/flatpaks.yml
+  - from-file: modules/fonts.yml
