@@ -22,6 +22,7 @@ modules:
         - davfs2 # WebDAV filesystem driver
         - edk2-ovmf # Virtualization
         - fastfetch # CLI system information
+        - file-roller # Archive manager
         - fish # Fish shell
         - gh # GitHub CLI
         - git-credential-libsecret # Git credential store using libsecret
