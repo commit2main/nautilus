@@ -10,10 +10,11 @@ modules:
     install:
       packages:
         - dms # dank material shell
-        - niri # niri core package
-        - xdg-desktop-portal-gtk # GTK xdg portal
-        - xdg-desktop-portal-gnome # GNOME xdg portal
         - gdm # GNOME Display Manager
+        - gnome-keyring # GNOME keyring
+        - niri # niri core package
+        - xdg-desktop-portal-gnome # GNOME xdg portal
+        - xdg-desktop-portal-gtk # GTK xdg portal
       exclude:
         - alacritty
         - fuzzel
