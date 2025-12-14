@@ -6,11 +6,9 @@ modules:
       cleanup: true
       files:
         - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
         - vscode.repo
       keys:
         - https://pkgs.tailscale.com/stable/fedora/repo.gpg
-        - https://repos.fyralabs.com/terra41/key.asc
         - https://packages.microsoft.com/keys/microsoft.asc
     install:
       packages:
@@ -18,6 +16,7 @@ modules:
         - bcc # eBPF utilities
         - bpftop # top for eBPF
         - bpftrace # eBPF trace library
+        - btop # Resource monitor
         - chezmoi # Dotfile manager
         - code # VScode
         - davfs2 # WebDAV filesystem driver
@@ -26,13 +25,16 @@ modules:
         - fish # Fish shell
         - gh # GitHub CLI
         - git-credential-libsecret # Git credential store using libsecret
+        - gparted # Partition editor
         - ifuse # FUSE for Apple devices
         - igt-gpu-tools # Intel GPU tools
         - iotop # View IO stats
+        - kitty # Terminal emulator
         - libimobiledevice # iOS services driver
         - libvirt # Virtualization
         - libvirt-nss
         - lm_sensors # Hardware sensor utility
+        - nautilus # File manager
         - osbuild-selinux # SELinux policy for osbuild
         - p7zip # 7zip
         - p7zip-plugins
@@ -51,6 +53,7 @@ modules:
         - restic # Backup program
         - sysprof # System profiler
         - tailscale # Mesh VPN
+        - uv # Python package installer
         - virt-manager # Virtualisation
         - virt-v2v
         - virt-viewer
