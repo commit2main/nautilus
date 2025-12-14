@@ -7,19 +7,25 @@ modules:
         scope: system
         install:
           - com.brave.Browser
+          - com.github.PintaProject.Pinta
           - com.github.tchx84.Flatseal
+          - com.github.xournalpp.xournalpp
           - com.ranfdev.DistroShelf
           - com.seafile.Client
           - dev.zed.Zed
           - eu.betterbird.Betterbird
           - io.github.kolunmi.Bazaar
           - io.gitlab.librewolf-community
+          - io.mpv.Mpv
           - io.podman_desktop.PodmanDesktop
           - md.obsidian.Obsidian
           - me.iepure.devtoolbox
           - org.deskflow.deskflow
           - org.fedoraproject.MediaWriter
+          - org.gnome.baobab
+          - org.gnome.Calculator
           - org.libreoffice.LibreOffice
           - org.localsend.localsend_app
+          - org.nomacs.ImageLounge
           - org.qbittorrent.qBittorrent
           - org.remmina.Remmina
