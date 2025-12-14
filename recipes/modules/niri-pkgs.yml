@@ -11,6 +11,9 @@ modules:
       packages:
         - dms # dank material shell
         - niri # niri core package
+        - xdg-desktop-portal-gtk # GTK xdg portal
+        - xdg-desktop-portal-gnome # GNOME xdg portal
+        - gdm # GNOME Display Manager
       exclude:
         - alacritty
         - fuzzel
