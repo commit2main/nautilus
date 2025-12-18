@@ -3,8 +3,7 @@
 modules:
   - type: default-flatpaks
     configurations:
-      - notify: true
-        scope: system
+      - scope: system
         install:
           - com.brave.Browser
           - com.github.PintaProject.Pinta

@@ -16,6 +16,8 @@ modules:
         - gnome-keyring # GNOME keyring
         - greetd # Minimal login manager
         - niri # niri core package
+        - plasma-polkit-agent # KDE polkit agent
+        - qt6ct # Qt theming support
         - xdg-desktop-portal-gnome # GNOME xdg portal
         - xdg-desktop-portal-gtk # GTK xdg portal
         # - gdm # GNOME Display Manager

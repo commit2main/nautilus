@@ -6,6 +6,7 @@ modules:
       enabled:
         - greetd.service
         - tailscaled.service
+        - udiskie.service
     user:
       enabled:
         - dms.service

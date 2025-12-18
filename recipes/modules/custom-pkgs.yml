@@ -14,12 +14,13 @@ modules:
         - https://packages.microsoft.com/keys/microsoft.asc
     install:
       packages:
-        - asusctl # Asus Power Profile management
         - android-tools # ADB
-        - supergfxctl # Asus Discrete GPU management
+        - asusctl # Asus Power Profile management
+        - brightnessctl # Monitor brightness control
         - btop # Resource monitor
         - chezmoi # Dotfile manager
         - code # VScode
+        - ddcutil # Monitor DDC Utilities
         - edk2-ovmf # Virtualization
         - fastfetch # CLI system information
         - file-roller # Archive manager
@@ -52,7 +53,9 @@ modules:
         - qemu-user-static
         - rclone # Cloud storage CLI utility
         - restic # Backup program
+        - supergfxctl # Asus Discrete GPU management
         - tailscale # Mesh VPN
+        - udiskie # Disk automounter
         - uv # Python package installer
         - virt-manager # Virtualisation
         - virt-v2v
