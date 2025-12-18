@@ -9,12 +9,16 @@ modules:
         - avengemedia/dms
     install:
       packages:
-        - dms # dank material shell
-        - gdm # GNOME Display Manager
+        - adw-gtk3-theme # GTK theming support
+        - dms # Dank Material Shell
+        - dms-greeter # DMS Greeter
+        - dsearch # DMS Filesystem Searcher
         - gnome-keyring # GNOME keyring
+        - greetd # Minimal login manager
         - niri # niri core package
         - xdg-desktop-portal-gnome # GNOME xdg portal
         - xdg-desktop-portal-gtk # GTK xdg portal
+        # - gdm # GNOME Display Manager
       exclude:
         - alacritty
         - fuzzel

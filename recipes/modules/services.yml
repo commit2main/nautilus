@@ -4,8 +4,10 @@ modules:
   - type: systemd
     system:
       enabled:
+        - greetd.service
         - tailscaled.service
     user:
       enabled:
         - dms.service
+        - dsearch.service
         - podman.socket
