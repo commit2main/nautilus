@@ -1,9 +1,0 @@
-https://github.com/adi1090x/plymouth-themes/releases/download/v1.0/spin.tar.gz[Plymouth Theme]
-Name=spin
-Description=display spinning circles
-Comment=created By Aditya Shakya (@adi1090x)
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/spin
-ScriptFile=/usr/share/plymouth/themes/spin/spin.script
