@@ -10,6 +10,7 @@ modules:
       enabled:
         - dms.service
         - dsearch.service
+        - gnome-keyring-daemon.service
         - podman.socket
         - ssh-agent.socket
         - udiskie.service
