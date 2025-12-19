@@ -27,6 +27,7 @@ modules:
         - fish # Fish shell
         - gh # GitHub CLI
         - git-credential-libsecret # Git credential store using libsecret
+        - glycin-thumbnailer # Thumbnailer for various file types
         - gparted # Partition editor
         - ifuse # FUSE for Apple devices
         - igt-gpu-tools # Intel GPU tools
