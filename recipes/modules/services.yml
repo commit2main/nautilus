@@ -11,4 +11,5 @@ modules:
         - dms.service
         - dsearch.service
         - podman.socket
+        - ssh-agent.socket
         - udiskie.service
