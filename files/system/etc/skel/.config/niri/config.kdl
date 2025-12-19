@@ -14,8 +14,9 @@ input {
         // dwt
         // dwtp
         // drag false
-        // drag-lock
+        drag-lock
         natural-scroll
+        scroll-factor 0.25
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "two-finger"
@@ -58,7 +59,6 @@ prefer-no-csd
 
 layout {
     gaps 5
-    center-focused-column "on-overflow"
     background-color "transparent"
 
     preset-column-widths {
