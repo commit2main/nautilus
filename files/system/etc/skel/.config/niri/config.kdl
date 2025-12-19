@@ -112,6 +112,7 @@ layout {
 // spawn-at-startup "waybar"
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+// spawn-at-startup "bash" "-c" "tailscale systray &"
 
 hotkey-overlay {
     skip-at-startup
@@ -153,6 +154,15 @@ window-rule {
     draw-border-with-background false
 }
 
+// Default floating windows
+window-rule {
+    match app-id=r#"org.quickshell$"#
+    match app-id="brave-nngceckbapebfimnlniiiahkandclblb-Default"
+    match app-id="Seafile Client"
+    match app-id="protonvpn-app"
+    open-floating true
+}
+
 window-rule {
     match is-active=false
     opacity 0.9
@@ -161,12 +171,6 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
-}
-
-// Open DMS windows as floating by default
-window-rule {
-    match app-id=r#"org.quickshell$"#
-    open-floating true
 }
 
 binds {
@@ -218,6 +222,8 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     Mod+Shift+P { power-off-monitors; }
+
+    Mod+Shift+Slash hotkey-overlay-title="Show Hotkey Overlay" { show-hotkey-overlay; }
 
     // Window Control
     Mod+Left  { focus-column-left; }

@@ -20,7 +20,6 @@ modules:
         - qt6ct # Qt theming support
         - xdg-desktop-portal-gnome # GNOME xdg portal
         - xdg-desktop-portal-gtk # GTK xdg portal
-        # - gdm # GNOME Display Manager
       exclude:
         - alacritty
         - fuzzel

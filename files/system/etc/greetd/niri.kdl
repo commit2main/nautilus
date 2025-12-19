@@ -7,11 +7,11 @@ environment {
 }
 
 gestures {
-  hot-corners {
-    off
-  }
+    hot-corners {
+         off
+    }
 }
 
 layout {
-  background-color "#000000"
+    background-color "#000000"
 }
