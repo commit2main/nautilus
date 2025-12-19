@@ -1,30 +1,34 @@
 # nautilus &nbsp; [![bluebuild build badge](https://github.com/commit2main/nautilus/actions/workflows/build.yml/badge.svg)](https://github.com/commit2main/nautilus/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Opinionated Fedora Atomic niri image.
 
-After setup, it is recommended you update this README to describe your custom image.
+![Desktop Screenshot](.github/assets/screenshot.png)
 
 ## Installation
-
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
+
+  ```sh
+  sudo bootc switch ghcr.io/commit2main/nautilus:latest
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/commit2main/nautilus:latest
-  ```
+
 - Reboot to complete the rebase:
-  ```
+
+  ```sh
   systemctl reboot
   ```
+
 - Then rebase to the signed image, like so:
+
+  ```sh
+  sudo bootc switch --enforce-container-sigpolicy ghcr.io/commit2main/nautilus:latest
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/commit2main/nautilus:latest
-  ```
+
 - Reboot again to complete the installation
-  ```
+
+  ```sh
   systemctl reboot
   ```
 
