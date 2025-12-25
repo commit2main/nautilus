@@ -12,7 +12,7 @@ modules:
   - from-file: modules/custom-os-release.yml
   - from-file: modules/niri-pkgs.yml
   - from-file: modules/custom-pkgs.yml
+  - from-file: modules/fonts.yml
   - from-file: modules/services.yml
   - from-file: modules/flatpaks.yml
-  - from-file: modules/fonts.yml
   - type: initramfs

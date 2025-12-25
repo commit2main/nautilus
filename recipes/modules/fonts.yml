@@ -3,8 +3,8 @@
 type: fonts
 fonts:
   nerd-fonts:
-    - FiraCode
     - JetBrainsMono
     - NerdFontsSymbolsOnly
-  google-fonts:
-    - Inter
+  url-fonts:
+    - name: AppleColorEmoji
+      url: https://github.com/samuelngs/apple-emoji-linux/releases/latest/download/AppleColorEmoji.ttf

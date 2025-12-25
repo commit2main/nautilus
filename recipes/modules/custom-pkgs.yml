@@ -33,6 +33,7 @@ modules:
         - ifuse # FUSE for Apple devices
         - igt-gpu-tools # Intel GPU tools
         - iotop # View IO stats
+        - jetbrains-mono-fonts-all # JetBrains Mono font
         - kitty # Terminal emulator
         - libimobiledevice # iOS services driver
         - libvirt # Virtualization
@@ -56,6 +57,7 @@ modules:
         - qemu-user-static
         - rclone # Cloud storage CLI utility
         - restic # Backup program
+        - rsms-inter-fonts # Inter font
         - supergfxctl # Asus Discrete GPU management
         - tailscale # Mesh VPN
         - udiskie # Disk automounter
