@@ -39,6 +39,7 @@ modules:
         - libvirt-nss
         - lm_sensors # Hardware sensor utility
         - nautilus # File manager
+        - nmtui # NetworkManager TUI
         - osbuild-selinux # SELinux policy for osbuild
         - p7zip # 7zip
         - p7zip-plugins
