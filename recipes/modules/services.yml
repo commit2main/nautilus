@@ -11,6 +11,7 @@ modules:
         - dms.service
         - dsearch.service
         - gnome-keyring-daemon.service
+        - gnome-keyring-daemon.socket
         - podman.socket
         - ssh-agent.socket
         - udiskie.service
