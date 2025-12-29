@@ -13,8 +13,12 @@ modules:
         - dms # Dank Material Shell
         - dms-greeter # DMS Greeter
         - dsearch # DMS Filesystem Searcher
+        - file-roller # Archive manager
+        - glycin-thumbnailer # Thumbnailer for various file types
         - gnome-keyring # GNOME keyring
+        - gnome-keyring-pam # GNOME keyring PAM module
         - greetd # Minimal login manager
+        - nautilus # File manager
         - niri # niri core package
         - polkit-kde # KDE polkit agent
         - qt6ct # Qt theming support

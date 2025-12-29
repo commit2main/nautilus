@@ -23,11 +23,9 @@ modules:
         - ddcutil # Monitor DDC Utilities
         - edk2-ovmf # Virtualization
         - fastfetch # CLI system information
-        - file-roller # Archive manager
         - fish # Fish shell
         - gh # GitHub CLI
         - git-credential-libsecret # Git credential store using libsecret
-        - glycin-thumbnailer # Thumbnailer for various file types
         - gparted # Partition editor
         - helix # Modal IDE
         - ifuse # FUSE for Apple devices
@@ -39,11 +37,11 @@ modules:
         - libvirt # Virtualization
         - libvirt-nss
         - lm_sensors # Hardware sensor utility
-        - nautilus # File manager
         - nmtui # NetworkManager TUI
         - osbuild-selinux # SELinux policy for osbuild
         - p7zip # 7zip
         - p7zip-plugins
+        - playerctl # Media controller CLI
         - podman-compose # Compose for Podman
         - powertop # Power consumption and management CLI utility
         - qemu # Virtualisation
@@ -62,9 +60,12 @@ modules:
         - tailscale # Mesh VPN
         - udiskie # Disk automounter
         - uv # Python package installer
+        - uxplay # AirPlay receiver
         - virt-manager # Virtualisation
         - virt-v2v
         - virt-viewer
+        - webp-pixbuf-loader # WebP support
+        - xdg-user-dirs # XDG user dirs management
     remove:
       packages:
         - firefox # Replace with Flatpak browsers
