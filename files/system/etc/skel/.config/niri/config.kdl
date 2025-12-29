@@ -11,7 +11,7 @@ input {
     touchpad {
         // off
         tap
-        // dwt
+        dwt
         // dwtp
         // drag false
         drag-lock
@@ -159,8 +159,9 @@ window-rule {
 window-rule {
     match app-id=r#"org.quickshell$"#
     match app-id="brave-nngceckbapebfimnlniiiahkandclblb-Default"
-    match app-id="Seafile Client"
+    match app-id="io.ente.auth"
     match app-id="protonvpn-app"
+    match app-id="Seafile Client"
     open-floating true
 }
 
