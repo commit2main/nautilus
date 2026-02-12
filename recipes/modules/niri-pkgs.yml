@@ -10,6 +10,14 @@ modules:
     install:
       packages:
         - adw-gtk3-theme # GTK theming support
+        - android-tools # ADB
+        - audispd-plugins # Audit dispatcher plugins
+        - brcmfmac-firmware # Broadcom wireless firmware
+        - brightnessctl # Screen brightness control
+        - cifs-utils # CIFS utilities
+        - cups # Printing server
+        - cups-pk-helper
+        - ddcutil # Monitor DDC Utilities
         - dms # Dank Material Shell
         - dms-greeter # DMS Greeter
         - dsearch # DMS Filesystem Searcher
@@ -17,16 +25,31 @@ modules:
         - fcitx5-hangul
         - fcitx5-mozc
         - file-roller # Archive manager
+        - fprintd # Fingerprint daemon
+        - fprintd-pam # Fingerprint PAM module
+        - git-credential-libsecret # Git libsecret
         - glycin-thumbnailer # Thumbnailer for various file types
         - gnome-keyring # GNOME keyring
         - gnome-keyring-pam # GNOME keyring PAM module
         - greetd # Minimal login manager
+        - ibus # Intelligent Input Bus
+        - ifuse # FUSE for Apple devices
+        - igt-gpu-tools # Intel GPU tools
+        - intel-audio-firmware # Intel audio firmware
+        - libimobiledevice # iOS services driver
         - nautilus # File manager
         - niri # niri core package
         - polkit-kde # KDE polkit agent
         - qt6ct # Qt theming support
+        - tuned # System tuning daemon
+        - tuned-ppd # Tuned PPD plugin
+        - udiskie # Disk automounter
+        - webp-pixbuf-loader # WebP support
+        - wl-mirror # Wayland display mirroring
         - xdg-desktop-portal-gnome # GNOME xdg portal
         - xdg-desktop-portal-gtk # GTK xdg portal
+        - xdg-terminal-exec # XDG terminal executor
+        - xdg-user-dirs # XDG user dirs management
       exclude:
         - alacritty
         - fuzzel
