@@ -13,6 +13,9 @@ modules:
         - dms # Dank Material Shell
         - dms-greeter # DMS Greeter
         - dsearch # DMS Filesystem Searcher
+        - fcitx5-chinese-addons # IME
+        - fcitx5-hangul
+        - fcitx5-mozc
         - file-roller # Archive manager
         - glycin-thumbnailer # Thumbnailer for various file types
         - gnome-keyring # GNOME keyring
