@@ -7,4 +7,4 @@ fonts:
     - NerdFontsSymbolsOnly
   url-fonts:
     - name: AppleColorEmoji
-      url: https://github.com/samuelngs/apple-emoji-linux/releases/latest/download/AppleColorEmoji.ttf
+      url: https://github.com/samuelngs/apple-emoji-ttf/releases/latest/download/AppleColorEmoji-Linux.ttf
