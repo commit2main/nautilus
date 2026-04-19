@@ -1,6 +1,6 @@
 # nautilus &nbsp; [![bluebuild build badge](https://github.com/commit2main/nautilus/actions/workflows/build.yml/badge.svg)](https://github.com/commit2main/nautilus/actions/workflows/build.yml)
 
-Opinionated Fedora Atomic niri image.
+Opinionated Fedora Atomic niri image heavily inspired by [Zirconium](https://github.com/zirconium-dev/zirconium).
 
 ![Desktop Screenshot](.github/assets/screenshot.png)
 

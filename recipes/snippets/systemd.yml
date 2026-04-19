@@ -1,0 +1,31 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: systemd
+system:
+  enabled:
+    - auditd.service
+    - bootc-fetch-apply-updates.timer
+    - bootloader-update.service
+    - firewalld.service
+    - greetd.service
+    - rechunker-group-fix.service
+    - systemd-resolved.service
+    - systemd-timesyncd.service
+    - tailscaled.service
+    - uupd.timer
+    - ublue-os-libvirt-workarounds.service
+  disabled:
+    - dnf-makecache.timer
+    - systemd-nsresourced.socket
+user:
+  enabled:
+    - dms.service
+    - fcitx5.service
+    # - foot-server.service
+    # - foot-server.socket
+    - gcr-ssh-agent.service
+    - gcr-ssh-agent.socket
+    - gnome-keyring-daemon.service
+    - gnome-keyring-daemon.socket
+    - iio-niri.service
+    - udiskie.service
