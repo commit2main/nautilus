@@ -1,0 +1,18 @@
+{
+    "BackgroundModeEnabled": false,
+    "RestoreOnStartup": 5,
+    "SearchSuggestEnabled": false,
+    "ShowFullUrlsInAddressBar": true,
+    "TorDisabled": 1,
+    "BraveRewardsDisabled": 1,
+    "BraveWalletDisabled": 1,
+    "BraveVPNDisabled": 1,
+    "BraveAIChatEnabled": 0,
+    "BraveNewsDisabled": 1,
+    "BraveTalkDisabled": 1,
+    "BraveWaybackMachineEnabled": 0,
+    "BraveP3AEnabled": 0,
+    "BraveStatsPingEnabled": 0,
+    "BraveWebDiscoveryEnabled": 0,
+    "BravePlaylistEnabled": 0
+}

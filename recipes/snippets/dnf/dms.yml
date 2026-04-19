@@ -1,0 +1,17 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: dnf
+repos:
+  copr:
+    - avengemedia/danklinux
+    - avengemedia/dms
+install:
+  install-weak-deps: false
+  packages:
+    - dms
+    - dms-cli
+    - dms-greeter
+    - dgop
+    - dsearch
+    - quickshell
+    # - quickshell-git

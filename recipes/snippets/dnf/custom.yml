@@ -1,0 +1,36 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: dnf
+repos:
+  files:
+    - code.repo
+    - terra.repo
+  keys:
+    - https://packages.microsoft.com/keys/microsoft.asc
+install:
+  packages:
+    - asusctl
+    - code
+    - fish
+    - gh
+    - gparted
+    - jetbrains-mono-fonts-all
+    - lm_sensors
+    - rsms-inter-fonts
+    - uv
+    ## Virtualization
+    - edk2-ovmf
+    - libvirt
+    - libvirt-nss
+    - qemu
+    - qemu-char-spice
+    - qemu-device-display-virtio-gpu
+    - qemu-device-display-virtio-vga
+    - qemu-device-usb-redirect
+    - qemu-img
+    - qemu-system-x86-core
+    - qemu-user-binfmt
+    - qemu-user-static
+    - virt-manager
+    - virt-v2v
+    - virt-viewer

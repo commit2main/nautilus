@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: dnf
+repos:
+  copr:
+    - ublue-os/packages
+install:
+  install-weak-deps: false
+  packages:
+    - uupd
+    - ublue-os-libvirt-workarounds

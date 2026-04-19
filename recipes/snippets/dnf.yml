@@ -1,0 +1,10 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - from-file: snippets/dnf/base.yml
+  - from-file: snippets/dnf/extras.yml
+  - from-file: snippets/dnf/niri.yml
+  - from-file: snippets/dnf/dms.yml
+  - from-file: snippets/dnf/terra-extras.yml
+  - from-file: snippets/dnf/ublue.yml
+  - from-file: snippets/dnf/custom.yml

@@ -1,0 +1,11 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+type: default-flatpaks
+configurations:
+  - notify: true
+    scope: system
+    install:
+      - dev.zed.Zed
+      - io.github.flattool.Ignition
+      # - org.gnome.TextEditor
+      - io.github.kolunmi.Bazaar

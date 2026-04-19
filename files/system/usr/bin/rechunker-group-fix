@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+gshadow_file="/etc/gshadow"
+group_file="/etc/group"
+
+while IFS= read -r group_entry; do
+  group_name="$(printf '%s' "${group_entry}" | cut -d: -f1)"
+  if ! grep -q "^${group_name}:" "${gshadow_file}"; then
+    printf '%s:!*::\n' "${group_name}" >> "${gshadow_file}"
+  fi
+done < "${group_file}"
