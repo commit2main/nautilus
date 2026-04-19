@@ -36,7 +36,7 @@ install:
     - fpaste
     - fzf
     - gcr
-    - generic-logos
+    # - generic-logos
     - git-core
     - glibc-all-langpacks
     - glycin-thumbnailer
