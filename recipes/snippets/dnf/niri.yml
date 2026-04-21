@@ -8,3 +8,11 @@ repos:
 install:
   packages:
     - niri
+  exclude:
+    - alacritty
+    - fuzzel
+    - mako
+    - swaybg
+    - swayidle
+    - swaylock
+    - waybar
