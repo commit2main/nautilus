@@ -2,15 +2,16 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 type: dnf
 repos:
+  cleanup: true
   files:
     - terra.repo
 install:
-  install-weak-deps: false
   packages:
     - iio-niri
     # - maple-fonts
     - satty
     # - terra-release
     # - terra-release-extras
+    - uupd
     # - valent
     - xdg-terminal-exec-nautilus

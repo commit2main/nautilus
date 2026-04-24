@@ -2,6 +2,9 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 type: dnf
 repos:
+  cleanup: true
+  copr:
+    - ublue-os/packages
   files:
     - code.repo
     - terra.repo
@@ -34,3 +37,4 @@ install:
     - virt-manager
     - virt-v2v
     - virt-viewer
+    - ublue-os-libvirt-workarounds

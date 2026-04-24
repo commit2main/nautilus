@@ -3,16 +3,16 @@
 type: dnf
 remove:
   packages:
-    - alacritty
-    - fuzzel
-    - mako
+    # - alacritty
+    # - fuzzel
+    # - mako
     - PackageKit
     - PackageKit-glib
     # - qemu-user-static
-    - swayidle
+    # - swayidle
     - ublue-os-update-services
-    - swaylock
-    - waybar
+    # - swaylock
+    # - waybar
     - ibus-panel
     - systemd-networkd
 install:
@@ -26,6 +26,7 @@ install:
     - default-fonts
     - default-fonts-core-emoji
     - distribution-gpg-keys
+    - distrobox
     - fastfetch
     - fcitx5-chinese-addons
     - fcitx5-mozc

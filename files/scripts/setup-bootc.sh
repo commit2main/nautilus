@@ -10,8 +10,7 @@ sed -i 's|^HOME=.*|HOME=/var/home|' "/etc/default/useradd"
 
 # Align rootfs layout with ostree/bootc expectations (stateful paths under /var).
 rm -rf /home /root /usr/local /srv /opt /mnt /usr/local /boot
-mkdir -p /sysroot /boot /var
-mkdir -p /sysroot/ostree
+mkdir -p /boot /var /sysroot/ostree
 ln -sfn sysroot/ostree /ostree
 ln -sfnT var/home /home
 ln -sfnT var/mnt /mnt
@@ -19,8 +18,6 @@ ln -sfnT var/opt /opt
 ln -sfnT var/roothome /root
 ln -sfnT var/srv /srv
 ln -sfnT ../../var/usrlocal /usr/local
-
-systemctl enable rechunker-group-fix.service
 
 # Ensure /tmp is mounted as tmpfs during normal boots.
 mkdir -p /usr/lib/systemd/system/local-fs.target.wants
