@@ -20,6 +20,7 @@ install:
     - gparted
     - jetbrains-mono-fonts-all
     - lm_sensors
+    - podman-compose
     - rsms-inter-fonts
     - uv
     ## Virtualization
