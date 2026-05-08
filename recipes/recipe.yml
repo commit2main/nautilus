@@ -4,7 +4,7 @@ name: nautilus
 description: Opinionated Fedora Atomic niri image.
 
 base-image: ghcr.io/blue-build/base-images/fedora-base
-image-version: latest
+image-version: 44
 
 modules:
   - from-file: snippets/files.yml
