@@ -18,10 +18,14 @@ if [ -f /etc/selinux/semanage.conf ]; then
 fi
 if [ -d /var/lib/selinux/targeted/active ]; then
   mkdir -p /etc/selinux/targeted
-  cp -a /var/lib/selinux/targeted/active /etc/selinux/targeted/
+  if ! [ /var/lib/selinux/targeted/active -ef /etc/selinux/targeted/active ]; then
+    cp -a /var/lib/selinux/targeted/active /etc/selinux/targeted/
+  fi
 fi
 if [ -d /var/lib/selinux/final ]; then
-  cp -a /var/lib/selinux/final /etc/selinux/
+  if ! [ /var/lib/selinux/final -ef /etc/selinux/final ]; then
+    cp -a /var/lib/selinux/final /etc/selinux/
+  fi
 fi
 
 # Rebuild font cache for newly layered font packages.

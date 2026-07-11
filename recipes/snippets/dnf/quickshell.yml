@@ -8,4 +8,6 @@ repos:
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:avengemedia:danklinux
     packages:
-      - quickshell
+      # Use swap rather than distro-sync so dependencies can resolve from Fedora.
+      - old: quickshell
+        new: quickshell
