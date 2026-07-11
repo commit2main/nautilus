@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "00 12 * * 5" # build at 12:00 UTC every Friday
   push:
-    branches: [ main ]
+    branches: [main]
     paths-ignore:
       - "**.md"
   pull_request:
@@ -36,5 +36,5 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: true
-          build_chunked_oci: true
-          use_cache: true
+          chunkah: true
+          rechunk_clear_plan: true
