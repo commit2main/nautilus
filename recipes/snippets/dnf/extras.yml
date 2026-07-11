@@ -16,6 +16,8 @@ remove:
     - ibus-panel
     - systemd-networkd
 install:
+  exclude:
+    - quickshell
   packages:
     - bolt
     - brightnessctl
