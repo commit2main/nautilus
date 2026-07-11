@@ -4,19 +4,22 @@ type: systemd
 system:
   enabled:
     - auditd.service
-    - bootc-fetch-apply-updates.timer
     - bootloader-update.service
     - firewalld.service
     - greetd.service
+    - ntpd-rs.service
     - rechunker-group-fix.service
     - systemd-resolved.service
-    - systemd-timesyncd.service
     - tailscaled.service
     - uupd.timer
     - ublue-os-libvirt-workarounds.service
   disabled:
+    - bootc-fetch-apply-updates.timer
     - dnf-makecache.timer
+    - sshd.service
+    - sshd.socket
     - systemd-nsresourced.socket
+    - systemd-timesyncd.service
 user:
   enabled:
     - dms.service

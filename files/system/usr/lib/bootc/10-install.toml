@@ -1,2 +1,8 @@
 [install]
 root-fs-type = "btrfs"
+
+[composefs]
+enabled = true
+
+[sysroot]
+readonly = true

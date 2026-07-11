@@ -7,3 +7,4 @@ modules:
   - from-file: snippets/dnf/extras.yml
   - from-file: snippets/dnf/external-extras.yml
   - from-file: snippets/dnf/custom.yml
+  - from-file: snippets/dnf/quickshell.yml

@@ -6,6 +6,5 @@ configurations:
     scope: system
     install:
       - dev.zed.Zed
-      - io.github.flattool.Ignition
       # - org.gnome.TextEditor
       - io.github.kolunmi.Bazaar

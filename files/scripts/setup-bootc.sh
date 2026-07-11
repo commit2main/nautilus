@@ -9,10 +9,11 @@ fi
 sed -i 's|^HOME=.*|HOME=/var/home|' "/etc/default/useradd"
 
 # Align rootfs layout with ostree/bootc expectations (stateful paths under /var).
-rm -rf /home /root /usr/local /srv /opt /mnt /usr/local /boot
+rm -rf /home /root /usr/local /srv /opt /mnt /media /usr/local /boot
 mkdir -p /boot /var /sysroot/ostree
 ln -sfn sysroot/ostree /ostree
 ln -sfnT var/home /home
+ln -sfnT run/media /media
 ln -sfnT var/mnt /mnt
 ln -sfnT var/opt /opt
 ln -sfnT var/roothome /root

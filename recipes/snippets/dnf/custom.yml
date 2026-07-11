@@ -36,7 +36,7 @@ install:
     - qemu-system-x86-core
     - qemu-user-binfmt
     - qemu-user-static
+    - ublue-os-libvirt-workarounds
     - virt-manager
     - virt-v2v
     - virt-viewer
-    - ublue-os-libvirt-workarounds

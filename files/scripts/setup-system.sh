@@ -1,18 +1,9 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-# Keep automatic update cadence and staging semantics from legacy image behavior.
-if [ -f /usr/lib/systemd/system/bootc-fetch-apply-updates.timer ]; then
-  sed -i 's|^OnUnitInactiveSec=.*|OnUnitInactiveSec=7d\nPersistent=true|' /usr/lib/systemd/system/bootc-fetch-apply-updates.timer
-fi
-
 if [ -f /etc/rpm-ostreed.conf ]; then
   sed -i 's|#AutomaticUpdatePolicy.*|AutomaticUpdatePolicy=stage|' /etc/rpm-ostreed.conf
   sed -i 's|#LockLayering.*|LockLayering=true|' /etc/rpm-ostreed.conf
-fi
-
-if [ -f /usr/lib/systemd/system/bootc-fetch-apply-updates.service ]; then
-  sed -i 's|^ExecStart=.*|ExecStart=/usr/bin/bootc update --quiet|' /usr/lib/systemd/system/bootc-fetch-apply-updates.service
 fi
 
 # Keep rootless Podman working without setuid uid/gid helpers.

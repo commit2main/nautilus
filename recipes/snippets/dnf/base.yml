@@ -1,25 +1,8 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 type: dnf
-remove:
-  packages:
-    - greenboot
-    - appstream-data
 install:
   packages:
-    - NetworkManager
-    - NetworkManager-adsl
-    - NetworkManager-bluetooth
-    - NetworkManager-config-connectivity-fedora
-    - NetworkManager-libnm
-    - NetworkManager-openconnect
-    - NetworkManager-openvpn
-    - NetworkManager-ssh
-    - NetworkManager-ssh-selinux
-    - NetworkManager-strongswan
-    - NetworkManager-vpnc
-    - NetworkManager-wifi
-    - NetworkManager-wwan
     - alsa-firmware
     - alsa-sof-firmware
     - alsa-tools-firmware
@@ -29,18 +12,15 @@ install:
     - audispd-plugins
     - brcmfmac-firmware
     - cifs-utils
+    - cirrus-audio-firmware
     - cups
     - cups-pk-helper
     - dymo-cups-drivers
-    - fprintd
-    - fprintd-pam
     - fuse
     - fuse-common
-    - fwupd
     - gstreamer1-plugin-dav1d
     - gstreamer1-plugin-openh264
     - gum
-    - gvfs-archive
     - gvfs-mtp
     - gvfs-nfs
     - gvfs-smb
@@ -60,10 +40,23 @@ install:
     - libimobiledevice
     - libimobiledevice-utils
     - libratbag-ratbagd
-    - man-pages
+    - libva-intel-media-driver
     - mesa-libGLU
     - mobile-broadband-provider-info
     - mt7xxx-firmware
+    - NetworkManager
+    - NetworkManager-adsl
+    - NetworkManager-bluetooth
+    - NetworkManager-config-connectivity-fedora
+    - NetworkManager-libnm
+    - NetworkManager-openconnect
+    - NetworkManager-openvpn
+    - NetworkManager-ssh
+    - NetworkManager-ssh-selinux
+    - NetworkManager-strongswan
+    - NetworkManager-vpnc
+    - NetworkManager-wifi
+    - NetworkManager-wwan
     - nxpwireless-firmware
     - open-vm-tools
     - open-vm-tools-desktop
@@ -73,8 +66,7 @@ install:
     - pipewire
     - pipewire-gstreamer
     - pipewire-utils
-    - plymouth
-    - plymouth-system-theme
+    - powerstat
     - printer-driver-brlaser
     - ptouch-driver
     - qemu-guest-agent
@@ -85,16 +77,15 @@ install:
     - switcheroo-control
     - system-config-printer-libs
     - system-config-printer-udev
+    - thermald
     - tiwilink-firmware
     - tuned
     - tuned-ppd
     - udisks2-lvm2
-    - unzip
     - usb_modeswitch
     - uxplay
+    - virtualbox-guest-additions
     - vpnc
-    - whois
     - wireguard-tools
     - wireplumber
     - xdg-user-dirs
-    - zram-generator-defaults
