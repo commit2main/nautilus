@@ -19,6 +19,7 @@ install:
     - gh
     - gparted
     - jetbrains-mono-fonts-all
+    - kitty
     - lm_sensors
     - podman-compose
     - rsms-inter-fonts

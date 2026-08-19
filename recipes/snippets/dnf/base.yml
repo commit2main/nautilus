@@ -3,89 +3,35 @@
 type: dnf
 install:
   packages:
-    - alsa-firmware
-    - alsa-sof-firmware
-    - alsa-tools-firmware
-    - alsa-ucm
-    - alsa-utils
-    - atheros-firmware
     - audispd-plugins
-    - brcmfmac-firmware
-    - cifs-utils
-    - cirrus-audio-firmware
-    - cups
     - cups-pk-helper
-    - dymo-cups-drivers
-    - fuse
-    - fuse-common
-    - gstreamer1-plugin-dav1d
+    - dracut-network
+    - dracut-squash
+    - glibc-minimal-langpack
+    - grub2-efi
     - gstreamer1-plugin-openh264
     - gum
-    - gvfs-mtp
-    - gvfs-nfs
-    - gvfs-smb
-    - hplip
-    - hyperv-daemons
-    - ibus
     - ifuse
-    - intel-audio-firmware
-    - iwlegacy-firmware
-    - iwlwifi-dvm-firmware
-    - iwlwifi-mvm-firmware
     - jmtpfs
-    - kernel-modules-extra
-    - libcamera-gstreamer
-    - libcamera-tools
     - libcamera-v4l2
-    - libimobiledevice
-    - libimobiledevice-utils
-    - libratbag-ratbagd
-    - libva-intel-media-driver
-    - mesa-libGLU
     - mobile-broadband-provider-info
-    - mt7xxx-firmware
-    - NetworkManager
     - NetworkManager-adsl
-    - NetworkManager-bluetooth
-    - NetworkManager-config-connectivity-fedora
-    - NetworkManager-libnm
     - NetworkManager-openconnect
     - NetworkManager-openvpn
     - NetworkManager-ssh
     - NetworkManager-ssh-selinux
     - NetworkManager-strongswan
     - NetworkManager-vpnc
-    - NetworkManager-wifi
-    - NetworkManager-wwan
-    - nxpwireless-firmware
-    - open-vm-tools
-    - open-vm-tools-desktop
     - openconnect
-    - pam_yubico
-    - pcsc-lite
-    - pipewire
-    - pipewire-gstreamer
-    - pipewire-utils
-    - powerstat
-    - printer-driver-brlaser
-    - ptouch-driver
-    - qemu-guest-agent
-    - realtek-firmware
-    - rsync
-    - spice-vdagent
-    - steam-devices
+    - passwd
+    - shim
+    - stalld
     - switcheroo-control
-    - system-config-printer-libs
-    - system-config-printer-udev
-    - thermald
-    - tiwilink-firmware
     - tuned
     - tuned-ppd
     - udisks2-lvm2
-    - usb_modeswitch
     - uxplay
-    - virtualbox-guest-additions
     - vpnc
-    - wireguard-tools
-    - wireplumber
+    - WALinuxAgent-udev
     - xdg-user-dirs
+    - zlib

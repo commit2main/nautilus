@@ -6,6 +6,7 @@ configurations:
     scope: system
     install:
       - com.brave.Browser
+      - com.danklinux.dankcalendar
       - com.github.PintaProject.Pinta
       - com.github.tchx84.Flatseal
       - com.ranfdev.DistroShelf

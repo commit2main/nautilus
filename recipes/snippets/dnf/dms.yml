@@ -6,13 +6,11 @@ repos:
   copr:
     - avengemedia/danklinux
     - avengemedia/dms
-    # - avengemedia/dms-git
 install:
   packages:
-    - dankcalendar-git
     - danksearch
     - dgop
     - dms
     - dms-cli
     - dms-greeter
-    - quickshell-git # git build to prevent QT downgrade
+    - quickshell

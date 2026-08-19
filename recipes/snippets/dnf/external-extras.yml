@@ -10,8 +10,6 @@ install:
     - iio-niri
     # - maple-fonts
     - satty
-    # - terra-release
-    # - terra-release-extras
     - uupd
-    - valent
+    # - valent
     - xdg-terminal-exec-nautilus

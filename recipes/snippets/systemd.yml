@@ -22,6 +22,7 @@ system:
     - systemd-timesyncd.service
 user:
   enabled:
+    - dsearch.service
     - dms.service
     - fcitx5.service
     # - foot-server.service
