@@ -32,8 +32,3 @@ fi
 if command -v fc-cache >/dev/null 2>&1; then
   fc-cache --force --really-force --system-only --verbose
 fi
-
-if [ -e /usr/bin/rechunker-group-fix ]; then
-  # Ensure helper is executable even if permissions drift during layering.
-  chmod 0755 /usr/bin/rechunker-group-fix
-fi

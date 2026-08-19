@@ -8,7 +8,6 @@ system:
     - firewalld.service
     - greetd.service
     - ntpd-rs.service
-    - rechunker-group-fix.service
     - systemd-resolved.service
     - tailscaled.service
     - uupd.timer
