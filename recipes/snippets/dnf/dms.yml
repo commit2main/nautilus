@@ -13,4 +13,4 @@ install:
     - dms
     - dms-cli
     - dms-greeter
-    - quickshell
+    - quickshell-git
