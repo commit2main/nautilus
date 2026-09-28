@@ -6,6 +6,8 @@ repos:
   files:
     - terra.repo
 install:
+  # switcheroo-control can be pulled in by earlier desktop packages; cardwire replaces it.
+  allow-erasing: true
   packages:
     - cardwire
     - cardwire-gui
