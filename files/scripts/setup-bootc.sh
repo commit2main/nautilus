@@ -18,7 +18,7 @@ ln -sfnT var/mnt /mnt
 ln -sfnT var/opt /opt
 ln -sfnT var/roothome /root
 ln -sfnT var/srv /srv
-ln -sfnT ../../var/usrlocal /usr/local
+ln -sfnT ../var/usrlocal /usr/local
 
 # Ensure /tmp is mounted as tmpfs during normal boots.
 mkdir -p /usr/lib/systemd/system/local-fs.target.wants
