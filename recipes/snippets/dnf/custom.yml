@@ -4,9 +4,11 @@ type: dnf
 repos:
   cleanup: true
   copr:
+    - berndserk/talosctl-rpm
     - ublue-os/packages
   files:
     - code.repo
+    - kubernetes.repo
     - terra.repo
   keys:
     - https://packages.microsoft.com/keys/microsoft.asc
@@ -20,9 +22,11 @@ install:
     - gparted
     - jetbrains-mono-fonts-all
     - kitty
+    - kubectl
     - lm_sensors
     - podman-compose
     - rsms-inter-fonts
+    - talosctl
     - uv
     ## Virtualization
     - edk2-ovmf
