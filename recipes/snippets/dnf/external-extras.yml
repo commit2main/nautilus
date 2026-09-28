@@ -7,6 +7,8 @@ repos:
     - terra.repo
 install:
   packages:
+    - cardwire
+    - cardwire-gui
     - iio-niri
     # - maple-fonts
     - satty

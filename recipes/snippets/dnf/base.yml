@@ -11,6 +11,7 @@ install:
     - grub2-efi
     - gstreamer1-plugin-openh264
     - gum
+    - gvfs-gphoto2
     - ifuse
     - jmtpfs
     - libcamera-v4l2
@@ -23,10 +24,10 @@ install:
     - NetworkManager-strongswan
     - NetworkManager-vpnc
     - openconnect
+    - openh264
     - passwd
     - shim
     - stalld
-    - switcheroo-control
     - tuned
     - tuned-ppd
     - udisks2-lvm2
