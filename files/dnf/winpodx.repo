@@ -1,0 +1,7 @@
+[home_Kernalix7]
+name=home:Kernalix7 (Fedora_$releasever)
+type=rpm-md
+baseurl=https://download.opensuse.org/repositories/home:/Kernalix7/Fedora_$releasever/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/home:/Kernalix7/Fedora_$releasever/repodata/repomd.xml.key
+enabled=1

@@ -10,6 +10,7 @@ repos:
     - code.repo
     - kubernetes.repo
     - terra.repo
+    - winpodx.repo
   keys:
     - https://packages.microsoft.com/keys/microsoft.asc
 install:
@@ -28,6 +29,7 @@ install:
     - rsms-inter-fonts
     - talosctl
     - uv
+    - winpodx
     ## Virtualization
     - edk2-ovmf
     - libvirt
