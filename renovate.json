@@ -2,5 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Owly RPM installed from GitHub releases",
+      "managerFilePatterns": [
+        "/^recipes/.+\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "https://github\\.com/(?<depName>t4t5/owly)/releases/download/v(?<currentValue>[^/]+)/owly-[^/]+-1\\.x86_64\\.rpm"
+      ],
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^v(?<version>.+)$",
+      "autoReplaceStringTemplate": "https://github.com/{{{depName}}}/releases/download/v{{{newValue}}}/owly-{{{newValue}}}-1.x86_64.rpm"
+    }
   ]
 }

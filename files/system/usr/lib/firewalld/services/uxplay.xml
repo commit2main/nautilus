@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>UxPlay</short>
+  <description>AirPlay mirroring receiver. Matches uxplay's legacy fixed ports (-p).</description>
+  <port protocol="tcp" port="7000-7001"/>
+  <port protocol="tcp" port="7100"/>
+  <port protocol="udp" port="6000-6001"/>
+  <port protocol="udp" port="7011"/>
+</service>
