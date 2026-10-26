@@ -28,6 +28,14 @@ if [ -d /var/lib/selinux/final ]; then
   fi
 fi
 
+# owly ships owlyd in /usr/lib (lib_t), so systemd runs it as init_t, which
+# SELinux denies nl80211. In /usr/libexec it's bin_t and runs as
+# unconfined_service_t; owlyd.service.d/10-libexec.conf points the unit there.
+if [ -f /usr/lib/owly/owlyd ] && [ ! -L /usr/lib/owly/owlyd ]; then
+  mv /usr/lib/owly/owlyd /usr/libexec/owlyd
+  ln -s ../../libexec/owlyd /usr/lib/owly/owlyd
+fi
+
 # Rebuild font cache for newly layered font packages.
 if command -v fc-cache >/dev/null 2>&1; then
   fc-cache --force --really-force --system-only --verbose
