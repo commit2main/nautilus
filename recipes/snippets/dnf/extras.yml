@@ -51,6 +51,9 @@ install:
     - kf6-kirigami
     - kf6-qqc2-desktop-style
     - khal
+    - kmscon-freetype
+    - kmscon-gl
+    - kmscon-pango
     - librime-lua
     - lshw
     - nano-default-editor

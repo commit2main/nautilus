@@ -22,7 +22,6 @@ install:
     - NetworkManager-ssh
     - NetworkManager-ssh-selinux
     - NetworkManager-strongswan
-    - NetworkManager-vpnc
     - openconnect
     - openh264
     - passwd
