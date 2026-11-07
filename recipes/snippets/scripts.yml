@@ -2,5 +2,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 type: script
 scripts:
+  - install-talosctl.sh
   - setup-bootc.sh
   - setup-system.sh

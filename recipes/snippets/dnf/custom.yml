@@ -3,13 +3,8 @@
 type: dnf
 repos:
   cleanup: true
-  copr:
-    - berndserk/talosctl-rpm
-    - ublue-os/packages
   files:
     - code.repo
-    - kubernetes.repo
-    - terra.repo
     # winpodx: re-enable once home:Kernalix7 publishes a Fedora_45 build
     # (the Fedora_44 RPM installs into python3.14 site-packages; F45 ships 3.15)
     # - winpodx.repo
@@ -17,7 +12,6 @@ repos:
     - https://packages.microsoft.com/keys/microsoft.asc
 install:
   packages:
-    - asusctl
     - code
     - file-roller
     - fish
@@ -31,7 +25,6 @@ install:
     - https://github.com/t4t5/owly/releases/download/v0.4.1/owly-0.4.1-1.x86_64.rpm
     - podman-compose
     - rsms-inter-fonts
-    - talosctl
     - uv
     # - winpodx # see repos above
     ## Virtualization
@@ -47,7 +40,6 @@ install:
     - qemu-system-x86-core
     - qemu-user-binfmt
     - qemu-user-static
-    - ublue-os-libvirt-workarounds
     - virt-manager
     - virt-v2v
     - virt-viewer

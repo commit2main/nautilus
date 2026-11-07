@@ -16,6 +16,18 @@
       "datasourceTemplate": "github-releases",
       "extractVersionTemplate": "^v(?<version>.+)$",
       "autoReplaceStringTemplate": "https://github.com/{{{depName}}}/releases/download/v{{{newValue}}}/owly-{{{newValue}}}-1.x86_64.rpm"
+    },
+    {
+      "customType": "regex",
+      "description": "Apple emoji font pinned to a GitHub release tag",
+      "managerFilePatterns": [
+        "/^recipes/.+\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "https://github\\.com/(?<depName>samuelngs/apple-emoji-ttf)/releases/download/(?<currentValue>[^/]+)/AppleColorEmoji-Linux\\.ttf"
+      ],
+      "datasourceTemplate": "github-releases",
+      "versioningTemplate": "regex:^macos-(?<major>\\d+)-(?<minor>\\d{8})-[0-9a-f]+$"
     }
   ]
 }

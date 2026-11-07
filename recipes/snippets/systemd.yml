@@ -12,7 +12,7 @@ system:
     - systemd-resolved.service
     - tailscaled.service
     - uupd.timer
-    - ublue-os-libvirt-workarounds.service
+    - libvirt-workarounds.service
   disabled:
     - bootc-fetch-apply-updates.timer
     - dnf-makecache.timer

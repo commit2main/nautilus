@@ -5,3 +5,4 @@ enabled=1
 type=rpm-md
 gpgcheck=1
 gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+includepkgs=code

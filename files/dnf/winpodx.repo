@@ -5,3 +5,4 @@ baseurl=https://download.opensuse.org/repositories/home:/Kernalix7/Fedora_$relea
 gpgcheck=1
 gpgkey=https://download.opensuse.org/repositories/home:/Kernalix7/Fedora_$releasever/repodata/repomd.xml.key
 enabled=1
+includepkgs=winpodx
