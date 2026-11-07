@@ -22,7 +22,7 @@ install:
     - kubectl
     - lm_sensors
     # AirDrop (no repo upstream; version bumped by Renovate)
-    - https://github.com/t4t5/owly/releases/download/v0.4.1/owly-0.4.1-1.x86_64.rpm
+    - https://github.com/t4t5/owly/releases/download/v0.4.2/owly-0.4.2-1.x86_64.rpm
     - podman-compose
     - rsms-inter-fonts
     - uv
@@ -31,7 +31,6 @@ install:
     - edk2-ovmf
     - libvirt
     - libvirt-nss
-    - qemu
     - qemu-char-spice
     - qemu-device-display-virtio-gpu
     - qemu-device-display-virtio-vga

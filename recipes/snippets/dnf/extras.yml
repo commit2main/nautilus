@@ -3,14 +3,7 @@
 type: dnf
 remove:
   packages:
-    # - alacritty
-    # - fuzzel
-    # - mako
-    # - qemu-user-static
-    # - swayidle
-    # - swaylock
     - ublue-os-update-services # uupd owns OS and Flatpak updates
-    # - waybar
 install:
   packages:
     - bolt
@@ -28,7 +21,6 @@ install:
     - fcitx5-mozc
     - fcitx5-rime
     - flatpak
-    # - foot # Replace with kitty
     - fzf
     - gcr
     # - generic-logos # Do not replace fedora-logos
@@ -38,7 +30,6 @@ install:
     - gnome-disk-utility
     - gnome-keyring
     - gnome-keyring-pam
-    - google-noto-color-emoji-fonts
     - google-noto-emoji-fonts
     - greetd
     - greetd-selinux
@@ -81,6 +72,5 @@ install:
     - wtype
     - xdg-desktop-portal-gnome
     - xdg-terminal-exec
-    - xdg-user-dirs
     - xwayland-satellite
     - ykman

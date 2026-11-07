@@ -28,6 +28,16 @@
       ],
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "regex:^macos-(?<major>\\d+)-(?<minor>\\d{8})-[0-9a-f]+$"
+    },
+    {
+      "customType": "regex",
+      "description": "talosctl pinned in the install script",
+      "managerFilePatterns": [
+        "/^files/scripts/.+\\.sh$/"
+      ],
+      "matchStrings": [
+        "tag=(?<currentValue>v[^ ]+) # renovate: datasource=(?<datasource>[^ ]+) depName=(?<depName>\\S+)"
+      ]
     }
   ]
 }

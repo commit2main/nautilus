@@ -12,7 +12,6 @@ system:
     - systemd-resolved.service
     - tailscaled.service
     - uupd.timer
-    - libvirt-workarounds.service
   disabled:
     - bootc-fetch-apply-updates.timer
     - dnf-makecache.timer
@@ -25,8 +24,6 @@ user:
     - dsearch.service
     - dms.service
     - fcitx5.service
-    # - foot-server.service
-    # - foot-server.socket
     - gcr-ssh-agent.service
     - gcr-ssh-agent.socket
     - gnome-keyring-daemon.service

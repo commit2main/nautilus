@@ -7,13 +7,4 @@ base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: 45
 
 modules:
-  - from-file: snippets/files.yml
-  - from-file: snippets/dnf.yml
-  - from-file: snippets/systemd.yml
-  - from-file: snippets/default-flatpaks.yml
-  - from-file: snippets/custom-flatpaks.yml
-  - from-file: snippets/custom-fonts.yml
-  - from-file: snippets/scripts.yml
-  - from-file: snippets/os-release.yml
-  - type: initramfs
-  - type: signing
+  - from-file: snippets/common.yml

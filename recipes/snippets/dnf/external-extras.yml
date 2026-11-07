@@ -5,9 +5,10 @@ repos:
   cleanup: true
   files:
     - terra.repo
+remove:
+  packages:
+    - switcheroo-control # weak dep of kf6-kio-core; cardwire replaces it
 install:
-  # switcheroo-control can be pulled in by earlier desktop packages; cardwire replaces it.
-  allow-erasing: true
   packages:
     - asusctl
     - cardwire

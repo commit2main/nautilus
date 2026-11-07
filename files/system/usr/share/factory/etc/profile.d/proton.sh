@@ -1,1 +1,0 @@
-export PROTON_USE_NTSYNC=1

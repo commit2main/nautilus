@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-# talosctl isn't packaged by Fedora or Terra. Fetch the latest upstream release
-# and verify its sigstore bundle against siderolabs' release workflow for that
-# exact tag, so a tampered binary or re-uploaded asset fails the build.
+# talosctl isn't packaged by Fedora or Terra. Fetch the pinned upstream release
+# (bumped by Renovate) and verify its sigstore bundle against siderolabs'
+# release workflow for that exact tag, so a tampered binary or re-uploaded
+# asset fails the build.
 repo=https://github.com/siderolabs/talos
-tag=$(curl -fsSLI -o /dev/null -w '%{url_effective}' "$repo/releases/latest")
-tag=${tag##*/}
-[[ $tag =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+tag=v1.14.5 # renovate: datasource=github-releases depName=siderolabs/talos
 
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT

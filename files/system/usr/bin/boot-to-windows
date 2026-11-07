@@ -3,13 +3,14 @@
 set -euo pipefail
 
 # Look up the boot number for Windows in the EFI records
-boot_number=$(echo $(efibootmgr) | grep -Po "(?<=Boot)\S{4}(?=( |\* )Windows)")
+boot_number=$(efibootmgr | grep -Po '^Boot\K[0-9A-F]{4}(?=\*? Windows)' || true)
 
 # Check that Windows EFI entry was found
 if [ -z "$boot_number" ]; then
-    kdialog --error "Cannot find Windows boot in EFI, exiting"
+    notify-send -u critical "Boot to Windows" "Cannot find Windows boot in EFI, exiting" || true
+    echo "Cannot find Windows boot in EFI, exiting" >&2
     exit 1
 fi
 
 # Set next boot to be Windows and reboot the machine
-sudo efibootmgr -n "${boot_number}" && reboot
+run0 efibootmgr -n "${boot_number}" && systemctl reboot

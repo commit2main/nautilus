@@ -7,7 +7,6 @@ install:
     - cups-pk-helper
     - dracut-network
     - dracut-squash
-    - glibc-minimal-langpack
     - grub2-efi
     - gstreamer1-plugin-openh264
     - gum
