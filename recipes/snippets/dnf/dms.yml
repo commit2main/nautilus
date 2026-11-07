@@ -4,13 +4,13 @@ type: dnf
 repos:
   cleanup: true
   copr:
-    - avengemedia/danklinux
-    - avengemedia/dms
+    - duxlabs/dux-repo
+    - duxlabs/dms
 install:
   packages:
-    - danksearch
-    - dgop
     - dms
     - dms-cli
-    - dms-greeter
+    - dux-gop
+    - dux-greeter
+    - dux-search
     - quickshell-git
