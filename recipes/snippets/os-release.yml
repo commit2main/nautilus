@@ -3,6 +3,6 @@
 type: os-release
 properties:
   NAME: Nautilus
-  PRETTY_NAME: "Nautilus (Version: 44)"
+  PRETTY_NAME: "Nautilus (Version: 45)"
   HOME_URL: "https://github.com/commit2main/nautilus"
   BUG_REPORT_URL: "https://github.com/commit2main/nautilus/issues"

@@ -4,7 +4,7 @@ name: nautilus-nvidia
 description: Opinionated Fedora Atomic niri image with NVIDIA drivers.
 
 base-image: ghcr.io/blue-build/base-images/fedora-base-nvidia-open
-image-version: 44
+image-version: 45
 
 modules:
   - from-file: snippets/files.yml
