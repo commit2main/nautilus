@@ -16,6 +16,7 @@ install:
     - default-fonts-core-emoji
     - distribution-gpg-keys
     - distrobox
+    - dnscrypt-proxy
     - fastfetch
     - fcitx5-chinese-addons
     - fcitx5-mozc

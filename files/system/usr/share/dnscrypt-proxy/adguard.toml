@@ -1,0 +1,33 @@
+# Local DoH forwarder for systemd-resolved (see resolved.conf.d/10-dnscrypt.conf).
+listen_addresses = ['127.0.0.1:53']
+server_names = ['adguard-dns-doh', 'adguard-dns-doh-2', 'adguard-dns-doh-ipv6', 'adguard-dns-doh-ipv6-2']
+
+ipv4_servers = true
+ipv6_servers = true
+dnscrypt_servers = false
+doh_servers = true
+require_dnssec = true
+require_nolog = false
+require_nofilter = false
+
+# resolved already caches
+cache = false
+
+# Stamps carry IPs, so no bootstrap lookup is needed; keep startup probes on AdGuard.
+ignore_system_dns = true
+bootstrap_resolvers = ['94.140.14.14:53']
+netprobe_address = '94.140.14.14:53'
+
+# https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/public-resolvers.md
+[static]
+  [static.'adguard-dns-doh']
+  stamp = 'sdns://AgMAAAAAAAAADDk0LjE0MC4xNC4xNCCbNPrD425-Kx_uSEenN2Yi1M4shzeMLqLUYEcj3T_2KQw5NC4xNDAuMTQuMTQKL2Rucy1xdWVyeQ'
+
+  [static.'adguard-dns-doh-2']
+  stamp = 'sdns://AgMAAAAAAAAADDk0LjE0MC4xNS4xNSCbNPrD425-Kx_uSEenN2Yi1M4shzeMLqLUYEcj3T_2KQw5NC4xNDAuMTUuMTUKL2Rucy1xdWVyeQ'
+
+  [static.'adguard-dns-doh-ipv6']
+  stamp = 'sdns://AgMAAAAAAAAAE1syYTEwOjUwYzA6OmFkMTpmZl0gmzT6w-Nufisf7khHpzdmItTOLIc3jC6i1GBHI90_9ikTZG5zLmFkZ3VhcmQtZG5zLmNvbQovZG5zLXF1ZXJ5'
+
+  [static.'adguard-dns-doh-ipv6-2']
+  stamp = 'sdns://AgMAAAAAAAAAE1syYTEwOjUwYzA6OmFkMjpmZl0gmzT6w-Nufisf7khHpzdmItTOLIc3jC6i1GBHI90_9ikTZG5zLmFkZ3VhcmQtZG5zLmNvbQovZG5zLXF1ZXJ5'
