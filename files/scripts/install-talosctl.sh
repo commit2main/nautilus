@@ -6,7 +6,7 @@ set -euxo pipefail
 # release workflow for that exact tag, so a tampered binary or re-uploaded
 # asset fails the build.
 repo=https://github.com/siderolabs/talos
-tag=v1.14.5 # renovate: datasource=github-releases depName=siderolabs/talos
+tag=v1.14.6 # renovate: datasource=github-releases depName=siderolabs/talos
 
 tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
